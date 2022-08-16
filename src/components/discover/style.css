@@ -1,0 +1,137 @@
+.Discover .title h6 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 87%;
+    text-align: center;
+}
+
+.Discover .discover-underground {
+    margin-top: 60px;
+    padding-bottom: 40px;
+    background: rgba(127, 196, 211, 0.04);
+}
+
+.discover-underground .left h6 {
+    width: 100%;
+    font-size: 40px;
+    max-width: 236px;
+    line-height: 121.5%;
+    margin: 79px 0 35px 0;
+}
+
+.discover-underground .left p {
+    width: 100%;
+    font-size: 22px;
+    max-width: 461px;
+    font-weight: 300;
+    color: #2E2E2E;
+    margin-bottom: 53px;
+    line-height: 201.5%;
+}
+
+.discover-underground .left .startBtn {
+    border: none;
+    width: 170px;
+    height: 54px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 27px;
+    font-style: normal;
+    align-items: center;
+    background: #88C8D6;
+    font-family: 'Spectral';
+    justify-content: center;
+}
+
+.discover-underground .image {
+    width: 100%;
+    height: 410px;
+    margin: 68px 0;
+    max-width: 540px;
+    position: relative;
+}
+
+.discover-underground .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.discover-underground .image::before {
+    content: '';
+    z-index: -1;
+    right: -50px;
+    width: 100%;
+    bottom: -50px;
+    height: 340px;
+    max-width: 370px;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url('../../assets/images/Dot.png');
+}
+
+/* Media Queries */
+@media screen and (max-width:1100px) {
+    .Discover {
+        overflow: hidden;
+    }
+
+    .discover-underground .image::before {
+        bottom: -15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .discover-underground .image {
+        max-width: initial;
+    }
+
+    .discover-underground .image::before {
+        right: 25px;
+        bottom: -50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .discover-underground .image {
+        height: 350px;
+    }
+
+    .discover-underground .image::before {
+        right: -25px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Discover .title h6 {
+        font-size: 30px;
+    }
+
+    .discover-underground .left h6 {
+        font-size: 30px;
+        margin: 40px 0 20px 0;
+    }
+
+    .discover-underground .left p {
+        font-size: 15px;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .discover-underground .image {
+        margin: 0;
+    }
+
+    .discover-underground .image::before {
+        bottom: 40px;
+        height: 230px;
+    }
+
+    .discover-underground .image img {
+        width: 90%;
+    }
+}

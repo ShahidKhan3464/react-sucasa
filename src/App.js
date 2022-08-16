@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import Header from './components/header/Header';
+import Hero from './components/hero/Hero';
+import Standard from './components/standard/Standard';
+import Rooms from './components/suggested-rooms/Rooms';
+import Discover from './components/discover/Discover';
+import Hotels from './components/luxury-hotels/Hotels';
+import Popular from './components/popular-hotels/Popular';
+import Footer from './components/footer/Footer';
 import './App.css';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Hero />
+      <Standard />
+      <Rooms />
+      <Discover />
+      <Hotels />
+      <Popular />
+      <Footer />
     </div>
   );
 }

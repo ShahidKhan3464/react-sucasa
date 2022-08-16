@@ -1,0 +1,183 @@
+.Hero {
+    padding: 120px 0;
+    background: #F8F8F8;
+}
+
+.Hero .bg-image {
+    width: 100%;
+    height: 554px;
+    max-width: 535px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/hotel.png');
+}
+
+.Hero .text h6 {
+    width: 100%;
+    font-size: 52px;
+    max-width: 535px;
+    font-weight: 600;
+    line-height: 118%;
+}
+
+.Hero .text p {
+    width: 100%;
+    font-size: 22px;
+    max-width: 523px;
+    font-weight: 300;
+    margin-top: 40px;
+    line-height: 43px;
+}
+
+/* Tabs */
+.Hero .tabs {
+    left: 40px;
+    bottom: -40px;
+    display: grid;
+    position: absolute;
+    background: #FFFFFF;
+    grid-template-columns: repeat(5, 1fr);
+    box-shadow: 0px 22px 38px rgba(0, 34, 19, 0.08);
+}
+
+.tabs .Tab {
+    gap: 20px;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    max-width: 200px;
+}
+
+.Tab .icon {
+    width: 24px;
+    height: 24px;
+}
+
+.Tab .data h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 87.5%;
+}
+
+.Tab .data input {
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 16px;
+    font-style: normal;
+    font-family: 'Open Sans';
+}
+
+.tabs button {
+    border: none;
+    width: 200px;
+    font-size: 22px;
+    color: #2E2E2E;
+    font-weight: 700;
+    line-height: 24px;
+    font-style: normal;
+    background: #FDBB30;
+    font-family: 'Spectral';
+}
+
+.tabs button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 1100px) {
+    .Hero .tabs {
+        left: 20px
+    }
+
+    .tabs .Tab {
+        max-width: 180px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .Hero {
+        padding-bottom: 0;
+    }
+
+    .Hero .bg-image {
+        max-width: initial;
+    }
+
+    .Hero .text h6 {
+        margin-top: 2rem;
+        max-width: 500px;
+    }
+
+    .Hero .bg-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Hero .bg-image .tabs {
+        position: unset;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tabs .Tab {
+        max-width: 200px;
+    }
+
+    .Tab .data input {
+        font-size: 11px;
+    }
+
+    .tabs button {
+        width: 100%;
+        height: 100px;
+        grid-column-end: 3;
+        grid-column-start: 1;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Hero {
+        padding: 50px 0;
+    }
+
+    .Hero .text h6 {
+        font-size: 30px;
+    }
+
+    .Hero .text p {
+        font-size: 15px;
+        margin-top: 10px;
+        line-height: 30px;
+    }
+
+    .Hero .bg-image .tabs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .Hero .tabs .data h6 {
+        font-size: 16px;
+    }
+
+    .Tab .data input {
+        font-size: 11px;
+    }
+
+    .tabs button {
+        height: 70px;
+        font-size: 18px;
+        grid-column-end: 1;
+        grid-column-start: 1;
+    }
+
+    .tabs button img {
+        width: 18px;
+        height: 18px;
+    }
+}

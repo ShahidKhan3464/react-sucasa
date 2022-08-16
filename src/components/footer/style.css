@@ -1,0 +1,148 @@
+.Footer {
+    margin-top: 80px;
+    background: #7FC4D3;
+}
+
+.Footer .upper-footer {
+    padding: 63px 0 45px 0;
+}
+
+.upper-footer .description p {
+    width: 100%;
+    font-size: 16px;
+    color: #FFFFFF;
+    max-width: 316px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 19.95px;
+}
+
+.upper-footer input {
+    border: none;
+    width: 100%;
+    height: 47px;
+    max-width: 296px;
+    margin-top: 46px;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.upper-footer input[type="email"] {
+    padding-left: 16px;
+}
+
+::placeholder {
+    font-size: 16px;
+    color: #8F8F8F;
+    line-height: 87%;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Spectral';
+}
+
+.upper-footer h6 {
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 19px;
+    margin-bottom: 35px;
+}
+
+.upper-footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.upper-footer ul li {
+    margin-bottom: 26px;
+}
+
+.upper-footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.upper-footer .contact {
+    margin-top: 38px;
+}
+
+.upper-footer .contact p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 12px;
+    margin-bottom: 26px;
+}
+
+.upper-footer .social-icons {
+    width: 190px;
+    margin-top: 39px;
+}
+
+.social-icons a {
+    padding-right: 10px;
+}
+
+.Footer .lower-footer {
+    padding: 33px 0 22px 0;
+}
+
+.lower-footer p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 87%;
+    color: #FFFFFF;
+    font-style: normal;
+    font-family: 'Spectral';
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .Footer .row>* {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Footer .upper-footer {
+        padding: 63px 0 0 0;
+    }
+
+    .upper-footer .description p {
+        font-size: 12px;
+    }
+
+    .upper-footer input {
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    .upper-footer h6 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .upper-footer ul li {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .upper-footer .contact p {
+        font-size: 13px;
+    }
+
+    .upper-footer .social-icons {
+        margin-top: 0px;
+    }
+
+    .Footer .lower-footer {
+        padding: 10px 0;
+    }
+
+    .lower-footer p {
+        font-size: 12px;
+    }
+}

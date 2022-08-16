@@ -1,0 +1,167 @@
+.Popular .top-portion {
+    display: flex;
+    margin-bottom: 54px;
+    justify-content: space-between;
+}
+
+.Popular .top-portion h6 {
+    width: 100%;
+    font-size: 40px;
+    max-width: 451px;
+    font-weight: 600;
+    line-height: 87%;
+}
+
+.Popular .top-portion button {
+    border: none;
+    width: 109px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2E2E2E;
+    line-height: 15px;
+    font-style: normal;
+    border-radius: 280px;
+    font-family: 'Spectral';
+    background: rgba(136, 200, 214, 0.09);
+}
+
+.Popular .cards {
+    gap: 30px;
+    display: flex;
+}
+
+.Popular .card {
+    border: none;
+    margin: auto;
+}
+
+.card .card-body {
+    position: relative;
+    border-radius: 16px;
+    background: #FAFAFA;
+}
+
+.card-body .card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2E2E2E;
+    line-height: 21px;
+    font-style: normal;
+    margin-bottom: 21px;
+    font-family: 'Spectral';
+}
+
+.card .card-data {
+    gap: 9px;
+    display: flex;
+}
+
+.card .card-data img {
+    width: 12px;
+    height: 17px;
+    object-fit: contain;
+}
+
+.card .card-data p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 13px;
+}
+
+.card-body .rating {
+    width: 129px;
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+.rating .icons {
+    gap: 3.9px;
+    display: flex;
+}
+
+.rating .icons i {
+    color: orange;
+}
+
+.rating .reviews p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 11px;
+    line-height: 18px;
+}
+
+.card-body .price {
+    right: 0;
+    bottom: 0;
+    width: 115px;
+    height: 56px;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    background: #FDBB30;
+    justify-content: center;
+    border-radius: 24px 0px 16px;
+}
+
+.card-body .price h6 {
+    margin: 0;
+    font-size: 20px;
+    line-height: 87%;
+    font-weight: 600;
+}
+
+/* Media Queries */
+@media screen and (max-width: 991px) {
+    .Popular .card {
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Popular .top-portion h6 {
+        max-width: 300px;
+    }
+
+    .Popular .top-portion button {
+        width: 100px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .Popular .top-portion {
+        margin-bottom: 20px;
+    }
+
+    .Popular .top-portion h6 {
+        font-size: 25px;
+        line-height: 120%;
+    }
+
+    .Popular .top-portion button {
+        width: 90px;
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .card-body .price {
+        width: 100px;
+        height: 50px;
+    }
+
+    .card-body .price h6 {
+        font-size: 15px;
+    }
+
+    .card-body .card-title {
+        font-size: 18px;
+    }
+
+    .card .card-data p {
+        font-size: 12px;
+    }
+
+    .rating .reviews p {
+        font-size: 12px;
+    }
+}

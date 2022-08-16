@@ -1,0 +1,130 @@
+.Hotels {
+    padding-top: 185px;
+    margin-bottom: 86px;
+}
+
+.Hotels .image {
+    width: 100%;
+    height: 478px;
+    max-width: 535px;
+}
+
+.Hotels .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Hotels .right h6 {
+    width: 100%;
+    font-size: 40px;
+    max-width: 402px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 46px;
+    margin-bottom: 13px;
+}
+
+.Hotels .right p {
+    width: 100%;
+    font-size: 22px;
+    max-width: 533px;
+    font-weight: 300;
+    line-height: 201.5%;
+    margin-bottom: 36px;
+}
+
+.Hotels .right .details {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 533px;
+    margin-bottom: 20px;
+}
+
+.Hotels .right .Data {
+    width: 130px;
+}
+
+.Hotels .right .details h6 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 27px;
+    font-family: 'Open Sans';
+}
+
+.Hotels .right .details p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #222222;
+    line-height: 11px;
+}
+
+.Hotels .right .exploreBtn {
+    border: none;
+    width: 199px;
+    display: flex;
+    font-weight: 700;
+    line-height: 87%;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    font-style: normal;
+    align-items: center;
+    background: #88C8D6;
+    font-family: 'Spectral';
+    justify-content: center;
+}
+
+/* Media Queries */
+@media screen and (max-width:991px) {
+    .Hotels .image {
+        max-width: initial;
+    }
+
+    .Hotels .right h6 {
+        margin-top: 2rem;
+    }
+
+    .Hotels .right .details {
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .Hotels {
+        padding-top: 80px;
+    }
+
+    .Hotels .image {
+        height: 300px;
+    }
+
+    .Hotels .right h6 {
+        font-size: 30px;
+    }
+
+    .Hotels .right p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .Hotels .right .details {
+        flex-wrap: wrap;
+    }
+
+    .Hotels .right .details h6 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .Hotels .right .details p {
+        font-size: 12px;
+    }
+
+    .Hotels .right .exploreBtn {
+        width: initial;
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
